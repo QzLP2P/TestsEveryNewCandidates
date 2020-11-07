@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
-using Shouldly;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TestsCandidates.Domain.Tests.Seeder.Test1
+namespace TestsCandidates.Referee.Referees.Tests1
 {
-    public static class Referee
+    public static class First
     {
         public static string SeedPersons()
         {
@@ -26,7 +25,7 @@ namespace TestsCandidates.Domain.Tests.Seeder.Test1
             if (p.Count() != 3)
                 return (false, "Lenght should be '3'");
 
-            if(p.First().Name != "C")
+            if (p.First().Name != "C")
                 return (false, "First item name should be 'C'");
 
             if (p.Last().Name != "A")
